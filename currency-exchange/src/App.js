@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './main';
 import Currency from "./pages/currency/Currency";
 import NoMatch from "./pages/NoMatch";
 // import Landing from "./pages/landing/Landing";
