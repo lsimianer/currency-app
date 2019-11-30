@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue|Lobster&display=swap');
+
+body {
+    font-family: 'Bebas Neue', cursive;
+
+}
+
 #currencyBG {
     opacity: 0.85;
     position: fixed;
@@ -8,6 +15,94 @@
     z-index: -999;
     /* background-image: ; */
     background: linear-gradient(0.25turn, #003a0a, #010300, #003a0a);
+}
+
+#loadScreen {
+    opacity: 1;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+    color: black;
+    background-color: white;
+    animation: 10s ease-in loadHider 1;
+    visibility: hidden;
+    opacity: 0;
+    /* background-image: ; */
+    /* background: linear-gradient(0.25turn, #003a0a, #010300, #003a0a); */
+
+}
+
+@keyframes loadHider {
+    0% {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    25% {
+        visibility: visible;
+        opacity: 0.95;
+    }
+
+    45% {
+        visibility: visible;
+        opacity: 0.80;
+    }
+
+    65% {
+        visibility: visible;
+        opacity: 0.85;
+    }
+
+    85% {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    100% {
+        visibility: hidden;
+        display: none;
+        opacity: 0;
+    }
+}
+.loadingText{
+    margin-top: 50%;
+    text-align: center;
+    color: black;
+    animation:  0.5s ease-in loadText infinite;
+}
+@keyframes loadText{
+    0% {
+        color: green;
+        opacity: 1;
+    }
+
+    25% {
+        color: rgb(0, 0, 0);
+        opacity: 0.90;
+    }
+
+    45% {
+        color: rgb(5, 7, 131);
+        opacity: 1;
+    }
+
+    65% {
+        color: rgb(71, 9, 87);
+        opacity: 0.90;
+    }
+
+    85% {
+        color: green;
+        opacity: 1;
+    }
+
+    100% {
+        color: green;
+        opacity: 0;
+    }
 }
 
 #USDcon {
@@ -63,6 +158,18 @@
 .baseInput {
     margin-left: 12px;
 }
-.rateP{
+
+.rateP {
     border-radius: 25px;
+}
+
+.titleText {
+    font-family: 'Lobster', cursive;
+    color: white;
+    text-align: center;
+}
+
+.subtitleText {
+    font-size: 0.9rem;
+    font-family: 'Bebas Neue', cursive;
 }

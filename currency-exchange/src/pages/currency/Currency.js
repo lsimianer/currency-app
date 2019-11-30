@@ -65,6 +65,13 @@ class Currency extends Component {
     render() {
         return (
             <div>
+                <h1 className='titleText'>
+                    Luke's Currency Converter
+                </h1>
+                <h2 className='titleText'>
+                    Select a currency to begin
+                </h2>
+                
                 <Row>
                     <Col>
                         <Container id='USDcon'>
@@ -210,8 +217,17 @@ class Currency extends Component {
                     </Col>
                 </Row>
 
+
+                    <p className='titleText subtitleText'>
+                        for api and other information on this app see the information page
+                    </p>
                
                 <div id='currencyBG'></div>
+                <div id='loadScreen'>
+                    <h1 className='loadingText'>
+                        loading screen with animation
+                    </h1>
+                </div>
             </div>
 
         );
