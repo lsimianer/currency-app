@@ -89,8 +89,8 @@ class Currency extends Component {
                                 <h3 className='searchconHeadText'>Compare rates</h3>
                                 
                                 <form onSubmit={this.handleSubmit}>
-                                    <label >Base Currency: </label>
-                                    <input type='text'  value={this.state.baseChoice} onChange={this.onChange} className='baseInput' list="base-currency" id="baseCurrencyChoice"  />
+                                    <label className='searchLabel'>Base Currency:</label>
+                                    <input type='text' className='searchInput'  value={this.state.baseChoice} onChange={this.onChange} className='baseInput' list="base-currency" id="baseCurrencyChoice"  />
                                     <datalist id="base-currency">
                                     <option value="AUD"/>
                                     <option value="GBP"/>
